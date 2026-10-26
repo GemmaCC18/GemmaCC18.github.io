@@ -5,7 +5,7 @@ const PUBLICATIONS = [
   // ---- Computing Systems & Data Center Sustainability ----
   {
     title: "Rethinking Data Center Sustainability Metrics Through a Life-Cycle Lens",
-    venue: "<strong>Chen, Z.</strong> &mdash; Poster, 2026 Gordon Research Conference (GRC) on Industrial Ecology",
+    venue: "<strong>Chen, Z.</strong>, Piao, Z., Zhao, X., Ye, Q. &amp; Yao, Y. &mdash; Poster, 2026 Gordon Research Conference (GRC) on Industrial Ecology",
     year: 2026, type: "poster", status: "published", topic: "computing"
   },
   {

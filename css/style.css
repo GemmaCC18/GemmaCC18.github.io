@@ -304,13 +304,72 @@ footer {
   justify-content: space-between;
 }
 
-/* ---------- Research page ---------- */
+/* ---------- Homepage research teaser ---------- */
 
-.loop-wrap {
-  margin: 36px 0 12px;
+.home-research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: 20px;
 }
 
-.loop-wrap svg { width: 100%; height: auto; display: block; }
+.home-research-card {
+  background: #fff;
+  padding: 26px 22px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-research-card .icon {
+  width: 100%;
+  height: 118px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line-soft);
+  padding-bottom: 16px;
+}
+
+.home-research-card .icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--navy);
+  fill: none;
+}
+
+.home-research-card h3 {
+  font-family: var(--serif);
+  font-size: 16.5px;
+  font-weight: 500;
+  margin: 0 0 14px;
+  line-height: 1.32;
+}
+
+.mini-papers {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  flex: 1;
+}
+
+.mini-papers li {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  padding: 7px 0;
+  border-bottom: 1px dotted var(--line-soft);
+}
+
+.mini-papers li:last-child { border-bottom: none; }
+
+.view-all {
+  font-size: 12.5px;
+  font-weight: 500;
+  border: none;
+  margin-top: auto;
+}
+
+/* ---------- Research page ---------- */
 
 .research-cards {
   display: grid;
@@ -320,36 +379,21 @@ footer {
   margin-top: 8px;
 }
 
-.research-card {
-  background: #fff;
-  padding: 32px 28px;
-  display: grid;
-  grid-template-columns: 170px 1fr;
-  gap: 28px;
-  align-items: start;
+.research-cards {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.research-card .figure-slot {
-  width: 100%;
-  aspect-ratio: 4/3;
-  background: var(--surface);
-  border: 1px dashed var(--line);
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  color: var(--muted);
-  text-align: center;
-  padding: 8px;
+.research-card {
+  background: #fff;
+  padding: 28px 24px;
 }
 
 .research-card h3 {
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 500;
-  margin: 0 0 14px;
-  line-height: 1.25;
+  margin: 0 0 16px;
+  line-height: 1.3;
 }
 
 .paper-list {
@@ -514,8 +558,8 @@ footer {
   .hero { grid-template-columns: 1fr; }
   .hero-photo { max-width: 200px; }
   .hero h1 { font-size: 34px; }
-  .research-card { grid-template-columns: 1fr; }
-  .research-card .figure-slot { max-width: 220px; }
+  .research-cards { grid-template-columns: 1fr; }
+  .home-research-grid { grid-template-columns: 1fr; }
   .plain-list li { flex-direction: column; gap: 2px; }
   .plain-list .school { text-align: left; }
   .pub-item { grid-template-columns: 1fr; gap: 6px; }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Zhenyang Chen</title>
+<meta name="description" content="Research by Zhenyang Chen on computing sustainability, clean energy transition materials, and electronic waste recycling.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">ZC</span>
+    <span class="brand-name">Zhenyang Chen</span>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">About</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="publications.html">Publications</a>
+  </nav>
+</header>
+
+<main>
+
+  <p class="eyebrow">Research</p>
+  <p class="prose" style="font-size:16.5px; color:var(--ink-soft); margin-bottom:0;">
+    Every item below sits somewhere on the same life cycle — regardless of whether the technology is a capacitor, a wind turbine, or a data center.
+  </p>
+
+  <!-- ===== Life-cycle loop ===== -->
+  <div class="loop-wrap">
+    <svg viewBox="0 0 860 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Life cycle loop: Material, Manufacturing, Use and Infrastructure, Recycling">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="#1c2f54"/>
+        </marker>
+      </defs>
+
+      <!-- connecting arcs -->
+      <path d="M 430 160 A 220 220 0 0 1 650 380" fill="none" stroke="var(--navy)" stroke-width="1.4" marker-end="url(#arrow)"/>
+      <path d="M 650 380 A 220 220 0 0 1 430 600" fill="none" stroke="var(--navy)" stroke-width="1.4" marker-end="url(#arrow)"/>
+      <path d="M 430 600 A 220 220 0 0 1 210 380" fill="none" stroke="var(--navy)" stroke-width="1.4" marker-end="url(#arrow)"/>
+      <path d="M 210 380 A 220 220 0 0 1 430 160" fill="none" stroke="var(--navy)" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+      <!-- nodes -->
+      <circle cx="430" cy="160" r="7" fill="var(--navy)"/>
+      <circle cx="650" cy="380" r="7" fill="var(--navy)"/>
+      <circle cx="430" cy="600" r="7" fill="var(--navy)"/>
+      <circle cx="210" cy="380" r="7" fill="var(--navy)"/>
+
+      <!-- MATERIAL (top) -->
+      <text x="430" y="105" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="19" font-weight="600" fill="var(--ink)">Material</text>
+      <text x="430" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="var(--ink-soft)">grid metals &middot; supply risk &middot; EV &amp; H2 demand</text>
+
+      <!-- MANUFACTURING (right) -->
+      <text x="680" y="375" text-anchor="start" font-family="Source Serif 4, Georgia, serif" font-size="19" font-weight="600" fill="var(--ink)">Manufacturing</text>
+      <text x="680" y="398" text-anchor="start" font-family="Inter, sans-serif" font-size="12" fill="var(--ink-soft)">semiconductor fab LCA</text>
+
+      <!-- USE / INFRASTRUCTURE (bottom) -->
+      <text x="430" y="650" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="19" font-weight="600" fill="var(--ink)">Use &amp; Infrastructure</text>
+      <text x="430" y="673" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="var(--ink-soft)">data center footprint &amp; metrics</text>
+
+      <!-- RECYCLING (left) -->
+      <text x="180" y="375" text-anchor="end" font-family="Source Serif 4, Georgia, serif" font-size="19" font-weight="600" fill="var(--ink)">Recycling</text>
+      <text x="180" y="398" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="var(--ink-soft)">capacitors &middot; cobalt &middot; e-waste</text>
+    </svg>
+  </div>
+
+  <!-- ===== Three thematic cards ===== -->
+  <div class="research-cards">
+
+    <div class="research-card">
+      <div class="figure-slot">figure</div>
+      <div>
+        <h3>Computing Systems &amp; Data Center Sustainability</h3>
+        <ul class="paper-list">
+          <li>Rethinking Data Center Sustainability Metrics Through a Life-Cycle Lens <span class="status">Poster &middot; GRC 2026</span></li>
+          <li>Material efficiency key for decarbonizing global data centers <span class="status">Under review</span></li>
+          <li>Quantifying the carbon footprint of next directions in 3D NAND flash and DRAM fabrication <span class="status">ICCAD 2026</span></li>
+          <li>Quantifying trade-offs in power, performance, area, and total carbon footprint (PPAtC) of next directions in FET technologies <span class="status">IEDM 2026</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="research-card">
+      <div class="figure-slot">figure</div>
+      <div>
+        <h3>Renewable Energy: Material Demand &amp; Environmental Impacts</h3>
+        <ul class="paper-list">
+          <li>Metal requirements for building electrical grid systems of global wind power and utility-scale solar PV until 2050 <span class="status">EST 2023</span></li>
+          <li>Fuel cell and electric vehicles: resource use and associated environmental impacts <span class="status">RCR 2026</span></li>
+          <li>Integrating resource constraints into green hydrogen scenarios: material demand and mitigation pathways for electrolyzer metals <span class="status">Working paper</span></li>
+          <li>Dynamic material flow analysis of aluminum from automobiles in China, 2000&ndash;2050 <span class="status">JCLEPRO 2022</span></li>
+          <li>Tracking and quantifying the cobalt flows in mainland China, 1994&ndash;2016 <span class="status">STOTEN 2019</span></li>
+          <li>Global supply risk assessment of metals used in clean energy technologies <span class="status">JCLEPRO 2022</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="research-card">
+      <div class="figure-slot">figure</div>
+      <div>
+        <h3>Electronic Waste Recycling</h3>
+        <ul class="paper-list">
+          <li>Recovery of tantalum from waste tantalum capacitors by supercritical water treatment <span class="status">ACS SCE 2017</span></li>
+          <li>Vacuum pyrolysis characteristics and parameter optimization of recycling organic materials from waste tantalum capacitors <span class="status">JHM 2018</span></li>
+          <li>Analysis of cobalt flows in mainland China: resource efficiency and supply security <span class="status">JCLEPRO 2020</span></li>
+          <li>Method for recycling tantalum from waste tantalum capacitors by chloride metallurgy <span class="status">ACS SCE 2017</span></li>
+          <li>Application of pyrolysis to recycling organics from waste tantalum capacitors <span class="status">JHM 2017</span></li>
+          <li>An integrated and environmental-friendly technology for recovering valuable materials from waste tantalum capacitors <span class="status">JCLEPRO 2017</span></li>
+          <li>Recovery of valuable materials from waste tantalum capacitors by vacuum pyrolysis combined with mechanical&ndash;physical separation <span class="status">ACS SCE 2017</span></li>
+          <li>Recycling waste tantalum capacitors to synthesize high value-added Ta2O5 and polyaniline-decorated Ta2O5 photocatalyst <span class="status">JCLEPRO 2020</span></li>
+          <li>Supply chain and sustainability implications of waste-to-graphite <span class="status">NRCT 2026</span></li>
+          <li>Process for synthesizing TaON photocatalysts from spent tantalum capacitors <span class="status">Patent, granted</span></li>
+          <li>Method for producing ultrafine Ta&#8322;O&#8325; from spent tantalum capacitors <span class="status">Patent, granted</span></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <span>&copy; 2026 Zhenyang Chen</span>
+  <span>New Haven, CT</span>
+</footer>
+
+</body>
+</html>

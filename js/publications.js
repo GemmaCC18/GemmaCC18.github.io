@@ -183,13 +183,19 @@ function renderFilters() {
   });
 }
 
+// Newest first. Items with no year (e.g. under review) sort to the top,
+// alongside the convention that forthcoming work is the most current.
+function byYearDesc(a, b) {
+  return (b.year ?? Infinity) - (a.year ?? Infinity);
+}
+
 function renderList() {
   const list = document.getElementById("pub-list");
   if (!list) return;
   const filtered = PUBLICATIONS.filter(p =>
     (activeTopic === "all" || p.topic === activeTopic) &&
     (activeType === "all" || p.type === activeType)
-  );
+  ).sort(byYearDesc);
 
   if (filtered.length === 0) {
     list.innerHTML = `<div class="empty-state">No publications match this filter.</div>`;
@@ -217,7 +223,7 @@ function renderList() {
 function renderResearchModules() {
   document.querySelectorAll("[data-paper-topic]").forEach(container => {
     const topic = container.dataset.paperTopic;
-    const papers = PUBLICATIONS.filter(p => p.topic === topic);
+    const papers = PUBLICATIONS.filter(p => p.topic === topic).sort(byYearDesc);
     container.innerHTML = papers.map(p => `
       <li>
         <p class="paper-title">${p.link ? `<a href="${p.link}" target="_blank" rel="noopener">${p.title}</a>` : p.title}</p>

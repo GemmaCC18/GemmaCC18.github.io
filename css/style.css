@@ -309,32 +309,34 @@ footer {
 .home-research-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  gap: 28px;
   margin-top: 20px;
 }
 
 .home-research-card {
   background: #fff;
-  padding: 26px 22px 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(22, 32, 46, 0.04);
+  padding: 20px 20px 24px;
   display: flex;
   flex-direction: column;
 }
 
 .home-research-card .icon {
-  width: 100%;
-  height: 118px;
-  margin-bottom: 18px;
-  border-bottom: 1px solid var(--line-soft);
-  padding-bottom: 16px;
+  display: block;
+  width: calc(100% + 40px);
+  margin: -20px -20px 18px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
 }
 
-.home-research-card .icon svg {
+.home-research-card .icon img {
   width: 100%;
   height: 100%;
-  stroke: var(--navy);
-  fill: none;
+  object-fit: cover;
+  display: block;
 }
 
 .home-research-card h3 {
@@ -373,19 +375,35 @@ footer {
 
 .research-cards {
   display: grid;
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-  margin-top: 8px;
-}
-
-.research-cards {
   grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 8px;
+  align-items: start;
 }
 
 .research-card {
   background: #fff;
-  padding: 28px 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(22, 32, 46, 0.04);
+  padding: 20px 22px 26px;
+}
+
+.research-card .icon {
+  display: block;
+  width: calc(100% + 44px);
+  margin: -20px -22px 18px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  background: var(--surface);
+}
+
+.research-card .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .research-card h3 {

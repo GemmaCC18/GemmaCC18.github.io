@@ -118,7 +118,7 @@ const PUBLICATIONS = [
 const TOPIC_LABELS = {
   computing: "Computing Systems & Data Center Sustainability",
   renewable: "Renewable Energy: Material Demand & Environmental Impacts",
-  ewaste: "Electronic Waste Recycling / 废物资源化"
+  ewaste: "Electronic Waste Recycling"
 };
 
 const TYPE_LABELS = {

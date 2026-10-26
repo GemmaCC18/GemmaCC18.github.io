@@ -1,6 +1,6 @@
-# GemmaCC18.github.io
+# gemma-zhenyangchen.github.io
 
-Personal site of Zhenyang Chen, served by GitHub Pages at https://gemmacc18.github.io.
+Personal site of Zhenyang Chen, served by GitHub Pages at https://gemma-zhenyangchen.github.io.
 
 It is a hand-built set of static pages (plain HTML/CSS/JS, no framework, no build
 step). GitHub Pages serves the files as-is on every push.

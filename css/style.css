@@ -421,19 +421,31 @@ footer {
 }
 
 .paper-list li {
-  font-size: 14px;
-  padding: 7px 0;
-  color: var(--ink-soft);
+  padding: 12px 0;
   border-bottom: 1px dotted var(--line);
 }
 .paper-list li:last-child { border: none; }
+
+.paper-list .paper-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 4px;
+  line-height: 1.4;
+}
+
+.paper-list .paper-venue {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.5;
+}
 
 .paper-list .status {
   font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--navy);
-  margin-left: 6px;
 }
 
 /* ---------- Publications page ---------- */
